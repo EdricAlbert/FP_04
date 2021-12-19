@@ -142,15 +142,17 @@ font-size: 25px;
     background: grey;
 }
 section{
-    padding-bottom: 200px;
-    padding-top: 50px;
+    padding-bottom: 10px;
 }
 /* ABOUT US */
 .ve, .linhvuc, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .ve{
-    background: black;
+    background: grey;
+}
+.ve-content{
+    height: 600px;
 }
 section .title{
     text-align: center;
@@ -212,4 +214,7 @@ section .title{
 .ve .ve-content .right a:hover{
     color: yellow;
     background: none;
+}
+.tempp{
+    background: black;
 }
