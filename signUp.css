@@ -7,3 +7,8 @@
 body{
     display: flex;
 }
+.left {
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url() no-repeat center;
+}
