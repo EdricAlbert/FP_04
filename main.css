@@ -142,7 +142,7 @@ font-size: 25px;
     background: grey;
 }
 section{
-    padding: 100px 0;
+    padding-bottom: 100px;
 }
 /* ABOUT US */
 .ve, .linhvuc, .skills, .teams, .contact, footer{
