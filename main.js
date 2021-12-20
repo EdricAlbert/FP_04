@@ -6,7 +6,6 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
         }
     });
-
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@bf7775b/css/all.css"
+      rel="stylesheet"/>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="./signUp.css">
 </head>
 <body>
@@ -21,9 +24,29 @@
 <!-- left -->
 
 <!-- right -->
-<div class="right">
+<div class="right flex justify-center items-center pb-20">
 
+    <div class="form">
+        <h1 class="subText text-7xl mb-12">Welcome, friend!</h1>
+        <div class="user pl-8">
+            <h3>Name</h3>
+            <input type="text" placeholder="Enter username">
+            <h3>Password</h3>
+            <input type="text" placeholder="Enter password">
+            <br>
+            <button class="signUpbtn bg-blue-600 w-28 h-10 text-white text-lg border rounded-md">Sign up</button>
+            <div id="or">OR</div>
+            <!-- login with accounts -->
+            <div class="loginMeth flex justify-center mt-4 mr-6 mb-2">
+                <button type="button" class="login-with-google-btn w-48 hover:" >
+                    Sign in with Google
+                  </button>
+            </div>
+            <!-- login with accounts -->
+        </div> 
+    </div>
 </div>
 <!-- right -->
+<script src="./signUp.js"></script>
 </body>
 </html>
