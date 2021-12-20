@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Yantramanav:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -84,35 +85,6 @@
     color: rgb(59, 165, 226);
 }
 
-.trangchu{
-    display: flex;
-    background: url(Pictures/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg) no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu','sans-serif';
-}
-.trangchu .max-width{
-    margin: auto 0 auto 40px;
-}
-.trangchu .trangchu-content .text-1{
-    font-size: 40px;
-    color: Cyan;
-}
-.trangchu .trangchu-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.trangchu .trangchu-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-    color: cyan;
-}
-.trangchu .trangchu-content .text-3 span{
-    color: rgb(153, 255, 0);
-    font-weight: 500;
-}
 
 .botBg {
 background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Pictures/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg) no-repeat center;
@@ -217,3 +189,7 @@ section .title{
     background: black;
 }
 
+/* footer */
+footer h1 {
+    font-family: 'Bebas Neue', cursive;
+}
