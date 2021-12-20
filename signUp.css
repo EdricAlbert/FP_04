@@ -15,7 +15,7 @@ body{
 .left {
 width: 60%;
 height: 100vh;
-background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://www.teahub.io/photos/full/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg) no-repeat center;
+background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Pictures/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg) no-repeat center;
 display: flex;
 justify-content: center;
 align-items: center;
