@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Yantramanav:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin: 0;
@@ -117,5 +118,8 @@ font-family: 'DM Sans', sans-serif;
     height: 20em;
     width: 15em;
     border: 1px solid white;
+}
+footer {
+    font-family: 'Bebas Neue', cursive;
 }
 
