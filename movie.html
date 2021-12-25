@@ -21,29 +21,49 @@
 <body>
     <!-- navBar -->
     <nav class="navbar mb-20">
-        <div class="menu flex max-w-fit">
+        <div class="menu flex">
             <div class="logo"><a href="#"><span>Filmo</span></a></div>
-                <ul class="menu flex justify-between w-2/5 text-lg text-white h-20 pt-8 pr-8">
-                <li><a href="#" class="ml-52">Home</a></li>
-                <li><a href="#">Latest</a></li>
-                <li><a href="#">Browse</a></li>
+            <ul class="menu flex justify-between w-2/5 text-lg text-white h-20 pt-8 pr-8">
+                <li class="ml-36"><input type="text" placeholder="Find movies"></li>
             </ul>
-            <div class="set">
+            <div class="set mb-2">
             <li><a href="#">Settings</a></li>
             <li><a href="#">User Name</a></li>
             </div>
         </div>
     </nav>
 <!-- navBar -->
+
+<!-- displayMovie -->
+<div class="display">
+    <video muted loop autoplay>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+</div>
+<!-- displayMovie -->
+
+<!-- botBg -->
 <div class="botBg">
    <h1>Upcoming</h1>
-   <div class="cardHolder"></div>
-   <h1>Upcoming</h1>
-   <div class="cardHolder"></div>
-   <h1>Upcoming</h1>
-   <div class="cardHolder"></div>
-    </div>
+   <div class="cardHolder">
+<img src="https://ecdn.game4v.com/g4v-content/uploads/2021/11/26091930/NWH-poster-1-game4v-1637893169-6.jpg" alt="">
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+   </div>
+   <h1>Best of 2020</h1>
+   <div class="cardHolder">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/A1CcbJfKqJL.jpg" alt="">
+    <img src="https://ss-images.saostar.vn/wp700/2019/03/25/4839377/spider-far-poster-3.jpg" alt="">
+    <img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+   </div>
 </div>
+<!-- botBg -->
 <script src="./movie.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
