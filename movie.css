@@ -97,11 +97,16 @@
     /* background-color:green ; */
     padding: 140px 0px 0px 0px;
 }
+.display img {
+    height: 800px;
+    width: 100%;
+    filter: brightness(50%);
+}
 .botBg {
 background-color: rgb(27, 26, 26);
 color: white;
-height: 100%;
 font-family: 'DM Sans', sans-serif;
+height: 100vh;
 }
 .botBg h1 {
     font-size: 50px;
