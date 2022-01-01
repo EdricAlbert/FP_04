@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@bf7775b/css/all.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./trailer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- navBar -->
+    <nav class="navbar">
+        <div class="menu flex max-w-fit">
+            <div class="logo"><a href="#"><span>Filmo</span></a></div>
+            <ul class="menu flex justify-between w-2/5 text-lg text-white h-20 pt-8 pr-8">
+            </ul>
+            <div class="set">
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="#">Guest</a></li>
+            </div>
+        </div>
+    </nav>
+<!-- navBar -->
+
+<!-- botBg -->
+<div class="botBg flex flex-row">
+    <div class="imageHolder w-1/3" id="image">
+        <img src="https://ecdn.game4v.com/g4v-content/uploads/2021/11/26091930/NWH-poster-1-game4v-1637893169-6.jpg" alt="">
+    </div>
+    <div class="des flex flex-col ml-4" id="title">
+    <h1 class="movieName text-6xl">Spider-Man: No Way Home</h1>
+    <span class="movieLength text-3xl mt-4">2021 - 2h29m</span>
+    <p class="descrip w-2/3 mt-12 text-lg">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>  
+    </div>
+</div>
+<div class="videoHolder w-full flex justify-center bg-black">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rt-2cxAiPJk" controls = 0 frameborder="0" modestbranding rel=0 autoplay=1  loop=1>
+    </iframe>
+</div>
+<!-- botBg -->
+
+<!-- footer -->
+<footer class="flex items-center flex-col w-full h-80 bg-white pt-12">
+    <h1 class="text-5xl text-black mb-10">Follow us on</h1>
+    <div class="smIcon">
+    <a href="https://www.facebook.com/quocchau.ly.9/"><i class="fab fa-facebook text-5xl text-black mr-12"></i></a>
+   <a href="https://github.com/iWantPeachs"><i class="fab fa-github text-5xl text-black"></i></a>
+    </div>
+    <span class="mt-12 text-gray-400">Copy right <i class="far fa-copyright"></i> 2021 Filmo</span>
+</footer>
+<!-- footer -->
+
+<script src="./trailer.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -122,19 +122,6 @@ padding-bottom: 50px;
     0 0 100px red,
     0 0 150px red;
 }
-/* email box */
-.email-container input{
-width: 30rem;
-height: 60px;
-padding-left: 20px;
-margin-bottom: 30px;
-margin-left: 30px;
-border: none;
-border-radius: 10px;
-color:black;
-font-size: 25px;
-}
-
 /* temp */
 .temp{
     height: 101vh;
@@ -181,6 +168,9 @@ section .title{
 .left{
     width: 45%;
 }
+.left img:hover {
+border: 3px solid;
+}
 .right{
     width: 55%;
 }
@@ -192,3 +182,10 @@ section .title{
 footer h1 {
     font-family: 'Bebas Neue', cursive;
 }
+footer span {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* testing */
+
+  

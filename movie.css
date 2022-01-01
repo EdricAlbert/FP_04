@@ -17,9 +17,7 @@
     font-family: 'Yantramanav', sans-serif;
     font-size: 40px;
 }
-.font-sans{
-    font-family: sans-serif;
-}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -83,33 +81,67 @@
     justify-content: space-around;
     width: 20%;
 }
-.menu input {
-    padding-left: 15px;
-    border: 1px;
-    border-radius: 10px;
-    height: 40px;
-    width: 30rem;
-    background: rgb(63, 63, 63);
-}
+
+/* Des */
 .display {
     padding: 140px 0px 0px 0px;
-    
+    position: relative;
+}
+video {
+    display: block;
+    filter: brightness(50%);
+}
+.des {
+position: absolute; bottom: 0; left: 0;
+display: flex;
+flex-direction: column;
+width: 100%;
+font-family: 'Bebas Neue', cursive;
+padding: 650px 0px 30px 40px;
+}
+.des h1 {
+    color: white;
+    text-shadow:
+      0 0 5px white,
+      0 0 10px red,
+      0 0 20px red,
+      0 0 40px white,
+      0 0 80px red,
+      0 0 90px red,
+      0 0 100px red,
+      0 0 150px red;
+}
+.des a {
+    background-color:white ;
+    width: 150px;
+    height: 50px;
+    padding: 5px 10px 15px 12px;
+    font-size:30px;
+    border-radius: 3px;
+  transition: .3s;
+}
+.des a:hover {
+    box-shadow: 8px 8px rgb(214, 212, 212)
 }
 video::-webkit-media-controls{
     display: none;
     -webkit-appearance: none;
 }
+
+/* Bottom Bg */
 .botBg {
 background-color: rgb(27, 26, 26);
 color: white;
 font-family: 'DM Sans', sans-serif;
-height: 100vh;
+/* height: 200vh; */
 }
 .botBg h1 {
     font-size: 50px;
     margin-left: 25px;
     padding: 20px 0px 0px 0px;
 }
+
+/* card holder */
 .cardHolder{
     height: 400px;
     display: flex;
@@ -119,9 +151,17 @@ height: 100vh;
     margin: 15px 15px 15px 15px;
     height: 20em;
     width: 15em;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
+.cardHolder img:hover{
+    border: 5px solid rgb(27, 26, 26);
+}
+
+/* footer */
 footer {
     font-family: 'Bebas Neue', cursive;
+}
+footer span {
+    font-family: 'DM Sans', sans-serif;
 }
 
