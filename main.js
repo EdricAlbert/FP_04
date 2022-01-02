@@ -28,3 +28,9 @@ $(document).ready(function(){
     });
 });
 // header nav bar
+
+// 
+const getMovieBtn = document.getElementById('toMoviePage')
+getMovieBtn.addEventListener("click", () => {
+    alert('You must login first')
+})
