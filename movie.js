@@ -28,31 +28,7 @@ $(document).ready(function(){
     });
 });
 // header nav bar
-// Data 
-//
-// import { getMovie } from "./firebase-helper.js";
-// const movieData = [
-//     {
-//         id: '',
-//         image: '',
-//         title: 'Spider-Man',
-//     },
-//     {
-//         id: '',
-//         image: '',
-//         title: 'Hello',
-//     },
-//     {
-//         id: '',
-//         image: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale',
-//         title: 'Dune',
-//     },
-// ]
-// document.getElementById('movieHolder').innerHTML = movieData.map (movie => 
-//     `<a href="./trailer.html">
-//     <img src="${movie.image}" alt="">
-//     <p class="text-white text-2xl flex justify-center">${movie.title}</p>`
-// ).join(``)
+
 
     
 
