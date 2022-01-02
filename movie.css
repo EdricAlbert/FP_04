@@ -143,7 +143,7 @@ font-family: 'DM Sans', sans-serif;
 
 /* card holder */
 .cardHolder{
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     padding: 25px; 
 } 

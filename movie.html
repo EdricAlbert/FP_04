@@ -28,8 +28,8 @@
             </ul>
             <div class="set">
             <li><a href="#"></a></li>
-            <li><a id="userName">chouzchouz</a></li>
-            <li><a href=""><button>Log out</button></a></li>
+            <li><a id="userName">Name</a></li>
+            <li><a><button id="btn">Log out</button></a></li>
             </div>
         </div>
     </nav>
@@ -52,10 +52,11 @@
 <!-- botBg -->
 <div class="botBg py-12">
    <h1>Movies</h1>
-   <div class="cardHolder flex-wrap">
-       <a href="./trailer.html"><img src="https://ecdn.game4v.com/g4v-content/uploads/2021/11/26091930/NWH-poster-1-game4v-1637893169-6.jpg" alt="">
+   <div class="cardHolder flex-wrap" id="movieHolder">
+       <a href="./trailer.html">
+        <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale" alt="">
+        <p class="text-white text-2xl flex justify-center">Dune</p>
        </a>
-    <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale" alt="">
    </div>
 </div>
 <!-- botBg -->
@@ -69,6 +70,8 @@
     <span class="mt-12 text-gray-400">Copy right <i class="far fa-copyright"></i> 2021 Filmo</span>
 </footer>
 <!-- footer -->
+<script src="./firebase-configMovies.js" type="module"></script>
+<script src="./firebase-helper.js" type="module"></script>
 <script src="./movie.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

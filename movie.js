@@ -28,4 +28,21 @@ $(document).ready(function(){
     });
 });
 // header nav bar
+// Data 
+const movieData = [
+    {
+        image: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F61116cea2313e8bae55a536a%2F-Dune-%2F0x0.jpg%3Ffit%3Dscale',
+        title: '',
+    },
+    {
+        image: '',
+        title: '',
+    },
+    {
+        image: '',
+        title: '',
+    }
+]
+const movieContainer = document.getElementById('movieHolder')
+
 
