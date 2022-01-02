@@ -21,7 +21,7 @@ function saveinfo(){
         } 
     }
     if (check == true) {
-        window.location.href = 'http://127.0.0.1:5501/login.html'
+        window.location.href = 'https://iwantpeachs.github.io/FP_04/login.html'
         lstAccount.push(newAccount);
     localStorage.setItem('lstAccount', JSON.stringify(lstAccount));
     }
@@ -46,7 +46,7 @@ function loginInfo () {
     }
      if (loginCheck == true) {
         alert('Login succesfully')
-        window.location.href = 'http://127.0.0.1:5501/movie.html'
+        window.location.href = 'https://iwantpeachs.github.io/FP_04/movie.html'
      } else {
          alert('Wrong password or username')
         }
