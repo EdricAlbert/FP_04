@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,14 +23,16 @@
     <!-- navBar -->
     <nav class="navbar mb-20">
         <div class="menu flex max-w-fit">
-            <div class="logo"><a href="#"><span>Filmo</span></a></div>
+            <div class="logo">
+                <a href="#">Filmo</a>
+            </div>
             <ul class="menu flex justify-between w-2/5 text-lg text-white h-20 pt-8 pr-8">
                 <li class="ml-36"></li>
             </ul>
             <div class="set">
             <li><a href="#"></a></li>
             <li><a id="userName">Name</a></li>
-            <li><a href="./main.html">Log out</a></li>
+            <li><a><button id="logOutBtn">Log out</button> </a></li>
             </div>
         </div>
     </nav>
@@ -41,9 +44,9 @@
         <source src="Pictures/Background.mp4" type="video/mp4">
     </video>
     <div class="des">
-        <h1 class="text-6xl text-white mb-2">Spider-Man: No Way Home</h1>
-        <h2 class="text-4xl text-white mb-2">Release date: 17/12</h2>
-        <a href="./trailer.html">Play trailer</a>
+        <h1 class="text-8xl text-white mb-2">Spider-Man: No Way Home</h1>
+        <h2 class="text-4xl text-white mb-2">Release date: 2021-12-17</h2>
+        <!-- <a href="./trailer.html">Play trailer</a> -->
     </div>
    
 </div>
@@ -68,7 +71,6 @@
 <!-- footer -->
 <script src="./firebase-configMovies.js" type="module"></script>
 <script src="./firebase-helper.js" type="module"></script>
-<script src="./movie.js" type="module"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

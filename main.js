@@ -29,8 +29,12 @@ $(document).ready(function(){
 });
 // header nav bar
 
-// 
+// Alert
 const getMovieBtn = document.getElementById('toMoviePage')
 getMovieBtn.addEventListener("click", () => {
-    alert('You must login first')
+    swal({
+        title: "You must login first!",
+        icon: "error",
+        button: "Ok",
+      });
 })
