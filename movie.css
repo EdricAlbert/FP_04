@@ -67,7 +67,32 @@
     font-weight: 500;
     transition: color 0.3s ease;
 }
+
+/* hover effect */
+.menu .logo a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .menu .logo a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .menu .logo a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(179, 7, 42);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
 .menu li a:hover{
+    color: rgb(59, 165, 226);
+}
+.navbar.sticky .menu li a:hover{
     color: rgb(59, 165, 226);
 }
 .menu {
