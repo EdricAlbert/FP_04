@@ -85,8 +85,9 @@
     color: rgb(59, 165, 226);
 }
 
+/* Pictures/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg */
 .botBg {
-background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(Pictures/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg) no-repeat center;
+background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80) no-repeat center;
 height: 100vh;
 color: white;
 display: flex;
