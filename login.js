@@ -18,10 +18,21 @@ function loginInfo () {
         } 
     }
      if (loginCheck == true) {
-        alert('Login succesfully')
-        window.location.href = './movie.html'
+        swal({
+            title: 'Login successfully',
+            icon: 'success',
+            button: 'ok',
+        })
+.then(() => {
+   window.location.href = './movie.html'
+});
+        
      } else {
-         alert('Wrong password or username')
+        swal({
+            title: "Wrong username or password",
+            icon: "error",
+            button: "ok",
+          });
         }
-    console.log(loginAccount) 
+    // console.log(loginAccount) 
 }

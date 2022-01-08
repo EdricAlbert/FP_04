@@ -28,3 +28,13 @@ $(document).ready(function(){
     });
 });
 // header nav bar
+
+// Alert
+const getMovieBtn = document.getElementById('toMoviePage')
+getMovieBtn.addEventListener("click", () => {
+    swal({
+        title: "You must login first!",
+        icon: "error",
+        button: "Ok",
+      });
+})
