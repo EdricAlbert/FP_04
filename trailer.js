@@ -41,31 +41,33 @@ async function getTrailer () {
 getTrailer()
         
 function createMovieList (movie, trailer) {
-    const trailerLink = document.createElement('iframe')
-    trailerLink.src = trailer.key
-    videoContainer.appendChild(trailerLink)
-    const newImage = document.createElement('img')
-    newImage.src = movie.backdrop_path
-    imageContainer.appendChild(newImage)
-
-    const newh1 = document.createElement('h1')
-    newh1.className = "movieName text-6xl"
-    newh1.textContent = movie.original_title
-    titleContainer.appendChild(newh1)
-
-    const newSpan = document.createElement('span')
-    newSpan.className = 'movieLength text-3xl mt-12'
-    newSpan.textContent = `Release date: ${movie.release_date}`
-    titleContainer.appendChild(newSpan)
+    if (trailer.type == 'Trailer' && movie.media_type == 'movie') {
+        const trailerLink = document.createElement('iframe')
+        trailerLink.src = trailer.key
+        videoContainer.appendChild(trailerLink)
+        const newImage = document.createElement('img')
+        newImage.src = movie.backdrop_path
+        imageContainer.appendChild(newImage)
     
-    const newP = document.createElement('p')
-    newP.textContent = movie.overview
-    newP.className = "descrip w-2/3 mt-12 text-lg leading-9"
-    titleContainer.appendChild(newP)
-
-    // Append
-    bigContainer.appendChild(imageContainer)
-    bigContainer.appendChild(titleContainer)
+        const newh1 = document.createElement('h1')
+        newh1.className = "movieName text-6xl"
+        newh1.textContent = movie.original_title
+        titleContainer.appendChild(newh1)
+    
+        const newSpan = document.createElement('span')
+        newSpan.className = 'movieLength text-3xl mt-12'
+        newSpan.textContent = `Release date: ${movie.release_date}`
+        titleContainer.appendChild(newSpan)
+        
+        const newP = document.createElement('p')
+        newP.textContent = movie.overview
+        newP.className = "descrip w-2/3 mt-12 text-lg leading-9"
+        titleContainer.appendChild(newP)
+    
+        // Append
+        bigContainer.appendChild(imageContainer)
+        bigContainer.appendChild(titleContainer)
+    }
 }
 
 // Scroll 
