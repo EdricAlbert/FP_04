@@ -100,3 +100,6 @@ $(document).ready(function(){
         }
     });
 });
+
+let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
+document.getElementById("user").innerHTML = presentAccount[presentAccount.length-1];

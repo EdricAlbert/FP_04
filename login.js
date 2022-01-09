@@ -1,4 +1,5 @@
 let lstAccount = JSON.parse(localStorage.getItem('lstAccount'));
+let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 const elm_name = document.getElementById('name');
 const elm_pw = document.getElementById('pw');
 const loginBtn = document.getElementById('login-btn')
@@ -23,10 +24,11 @@ function loginInfo () {
             icon: 'success',
             button: 'ok',
         })
-.then(() => {
-   window.location.href = './movie.html'
-});
-        
+    .then(() => {
+        window.location.href = './movie.html'
+    });
+    presentAccount.push(loginAccount.name);
+    localStorage.setItem('presentAccount', JSON.stringify(presentAccount));
      } else {
         swal({
             title: "Wrong username or password",
