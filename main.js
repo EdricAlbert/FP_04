@@ -31,10 +31,18 @@ $(document).ready(function(){
 
 // Alert
 const getMovieBtn = document.getElementById('toMoviePage')
+const getLoginBtn = document.getElementById('loginbtn')
+let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 getMovieBtn.addEventListener("click", () => {
-    swal({
-        title: "You must login first!",
-        icon: "error",
-        button: "Ok",
-      });
+    if (presentAccount){
+        window.location.href = './movie.html'
+        getLoginBtn.innerHTML = presentAccount[presentAccount.length-1];
+    } else {
+        swal({
+            title: "You must login first!",
+            icon: "error",
+            button: "Ok",
+          });
+    }
+    
 })

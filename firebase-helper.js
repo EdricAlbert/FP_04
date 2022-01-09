@@ -80,5 +80,6 @@ swal("Are you sure you want to log out?", "", "warning")
 window.location.href = './main.html'
 });
 })
-
+let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
+document.getElementById("user").innerHTML = presentAccount[presentAccount.length-1];
 
