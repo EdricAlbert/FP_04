@@ -1,17 +1,20 @@
-let lstAccount = JSON.parse(localStorage.getItem('lstAccount'));
-let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 const elm_name = document.getElementById('name');
 const elm_pw = document.getElementById('pw');
 const loginBtn = document.getElementById('login-btn')
 loginBtn.addEventListener('click', loginInfo)
+
 function loginInfo () {
-    let loginLength = lstAccount.length
+let lstAccount = JSON.parse(localStorage.getItem('lstAccount'));
+if (localStorage.getItem('presentAccount') == null) {
+    localStorage.setItem('presentAccount', '[]')
+}
+let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
     const loginAccount = {
         name: elm_name.value,
         pw: elm_pw.value
     }
     let loginCheck = false;
-    for (let j = 0; j < loginLength; j++) {
+    for (let j = 0; j < lstAccount.length; j++) {
         console.log(lstAccount[j])
         if (loginAccount.name == lstAccount[j].name && loginAccount.pw == lstAccount[j].pw ) {
             loginCheck = true

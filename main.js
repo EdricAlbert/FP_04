@@ -31,12 +31,12 @@ $(document).ready(function(){
 
 // Alert
 const getMovieBtn = document.getElementById('toMoviePage')
-const getLoginBtn = document.getElementById('loginbtn')
+const getUsername = document.getElementById('username')
 let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
+let lstAccount = JSON.parse(localStorage.getItem("lstAccount"))
 getMovieBtn.addEventListener("click", () => {
     if (presentAccount){
         window.location.href = './movie.html'
-        getLoginBtn.innerHTML = presentAccount[presentAccount.length-1];
     } else {
         swal({
             title: "You must login first!",
@@ -46,3 +46,23 @@ getMovieBtn.addEventListener("click", () => {
     }
     
 })
+
+// Check
+const getLoginBtn = document.getElementById('loginbtn')
+if (lstAccount) {
+    getUsername.innerHTML = presentAccount[presentAccount.length-1];
+    getUsername.href = ''
+} 
+getLoginBtn.addEventListener('click', () => {
+    if (presentAccount) {
+        window.location.href = './login.html'
+    } else{
+        swal({
+            title: "You must sign up first!",
+            icon: "error",
+            button: "Ok",
+          })
+    }
+    
+})
+

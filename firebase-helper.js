@@ -75,6 +75,7 @@ $(document).ready(function(){
 
 const logOut = document.getElementById('logOutBtn')
 logOut.addEventListener("click", () => {
+  // localStorage.clear()
 swal("Are you sure you want to log out?", "", "warning")
 .then(() => {
 window.location.href = './main.html'
@@ -82,4 +83,12 @@ window.location.href = './main.html'
 })
 let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 document.getElementById("user").innerHTML = presentAccount[presentAccount.length-1];
+
+const signOut = document.getElementById('signOutBtn')
+signOut.addEventListener('click', () => {
+  swal("Are you sure you want to log out?", "", "warning")
+.then(() => {
+window.location.href = './main.html'
+});
+})
 
