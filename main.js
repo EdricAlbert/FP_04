@@ -34,29 +34,31 @@ const getMovieBtn = document.getElementById('toMoviePage')
 const getUsername = document.getElementById('username')
 let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 let lstAccount = JSON.parse(localStorage.getItem("lstAccount"))
+let test = JSON.parse(localStorage.getItem('test'))
 getMovieBtn.addEventListener("click", () => {
-    if (presentAccount){
+    if (lstAccount && !test){
         window.location.href = './movie.html'
-    } else {
+    }
+     else {
         swal({
             title: "You must login first!",
             icon: "error",
             button: "Ok",
           });
     }
-    
 })
 
 // Check
 const getLoginBtn = document.getElementById('loginbtn')
 if (lstAccount) {
-    getUsername.innerHTML = presentAccount[presentAccount.length-1];
+    getUsername.innerHTML = 'Guest'
     getUsername.href = ''
 } 
 getLoginBtn.addEventListener('click', () => {
-    if (presentAccount) {
+    if (lstAccount) {
         window.location.href = './login.html'
-    } else{
+    } 
+    else{
         swal({
             title: "You must sign up first!",
             icon: "error",

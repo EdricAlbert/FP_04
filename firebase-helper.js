@@ -84,8 +84,10 @@ window.location.href = './main.html'
 let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
 document.getElementById("user").innerHTML = presentAccount[presentAccount.length-1];
 
-const signOut = document.getElementById('signOutBtn')
+const signOut = document.getElementById('logOutBtn')
 signOut.addEventListener('click', () => {
+  localStorage.setItem('presentAccount', '[]')
+  localStorage.setItem('test', '[]')
   swal("Are you sure you want to log out?", "", "warning")
 .then(() => {
 window.location.href = './main.html'

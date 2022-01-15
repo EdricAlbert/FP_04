@@ -32,6 +32,7 @@ let presentAccount = JSON.parse(localStorage.getItem('presentAccount'));
     });
     presentAccount.push(loginAccount.name);
     localStorage.setItem('presentAccount', JSON.stringify(presentAccount));
+    localStorage.removeItem('test')
      } else {
         swal({
             title: "Wrong username or password",
