@@ -50,10 +50,13 @@ getMovieBtn.addEventListener("click", () => {
 
 // Check
 const getLoginBtn = document.getElementById('loginbtn')
-if (lstAccount) {
+if (lstAccount && test) {
     getUsername.innerHTML = 'Guest'
+} else if (lstAccount && presentAccount) {
+    getUsername.innerHTML = presentAccount
+    console.log(presentAccount.name)
     getUsername.href = ''
-} 
+}
 getLoginBtn.addEventListener('click', () => {
     if (lstAccount) {
         window.location.href = './login.html'
